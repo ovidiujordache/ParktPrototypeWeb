@@ -38,7 +38,7 @@ const Home=()=>{
         Basic App prototype to showcase functionality of the Smart Parking System. "P A R K T".
         It showscase two User Stories.Technologies used for prototyping: Gatbsy/React/Nodejs , Netlify for deployment and CI/CD</h2>
    
-    <h1 style={{padding:"20px"}}> Mock Car Park layout</h1>
+    <h1 style={{padding:"20px"}}> Mockup Car Park layout</h1>
     <img src={layout} alt="no img" style={{width:'50vw',padding:'10px'}}/>
   
          <List>
