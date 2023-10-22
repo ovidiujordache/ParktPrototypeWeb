@@ -11,29 +11,12 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-const theme = createTheme({
-  palette: {
-    primary: {
-      light: '#757ce8',
-      main: '#AA3939',
-      dark: '#002884',
-      contrastText: '#fff',
-    },
-    secondary: {
-      light: '#ff7961',
-      main: '#f44336',
-      dark: '#ba000d',
-      contrastText: '#000',
-    },
-  },
-  
-});
+import theme from './Theme'
+import {ThemeProvider } from '@mui/material/styles';
 
 
 const pages = ['User Story 1', 'User Story 2'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['Profile', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
