@@ -13,9 +13,10 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import theme from './Theme'
 import {ThemeProvider } from '@mui/material/styles';
+import icon from '../images/icon.png'
 
 
-const pages = ['User Story 1', 'User Story 2'];
+const pages = ['Home', 'About'];
 const settings = ['Profile', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -58,7 +59,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            PARKT PROTOTYPE
+            PROTOTYPE <img src={icon} alt="no img"/>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -131,7 +132,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Parkt" src="../images/02.jpg" />
+                <Avatar alt="Parkt" src='./' />
               </IconButton>
             </Tooltip>
             <Menu
