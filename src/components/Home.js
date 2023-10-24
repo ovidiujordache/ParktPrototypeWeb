@@ -42,20 +42,7 @@ const Home=()=>{
     <h1 style={{padding:"20px",border:'2px dashed black'}}> Mockup Car Park layout</h1>
     <img src={layout} alt="no img" style={{width:'50vw',padding:'10px',border:'2px dashed black'}}/>
   
-      {/*   <List>
-          <ListItem >
-
-           
-              <ListItemText primary="User Story 1: " secondary="User wants find free spot" />
-  
-          </ListItem>
-          <ListItem >
-          
-              <ListItemText primary="User Story 2:" secondary="User wants estimated time for free spot" />
-       
-          </ListItem>
-        </List>
-*/}
+     
         
     <h1 style={{padding:"20px",border:'2px dashed black'}}>Work in progress...</h1>
 
