@@ -50,7 +50,7 @@ const Home=()=>{
           <ListItem >
           
               <ListItemText primary="User Story 2:" secondary="User wants estimated time for free spot" />
-      
+        <Button> Show me free spaces </Button>
           </ListItem>
         </List>
 
