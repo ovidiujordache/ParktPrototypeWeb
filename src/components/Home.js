@@ -13,6 +13,7 @@ import {ThemeProvider } from '@mui/material/styles';
 import layout from '../images/layout_prototype.png';
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
+import Button from '@material-ui/core/Button';
 
 import Paper from '@mui/material/Paper';
 
@@ -34,15 +35,16 @@ const Home=()=>{
       <CssBaseline />
       <Container fixed>
         <Box sx={{ bgcolor: '#F6EFD4' }} >
-        <h2 style={{padding:'30px'}}>
+        <h2 style={{padding:'30px',border:'2px dashed black'}}>
         Basic App prototype to showcase functionality of the Smart Parking System. "P A R K T".
         It showscase two User Stories.Technologies used for prototyping: Gatbsy/React/Nodejs , Netlify for deployment and CI/CD</h2>
    
-    <h1 style={{padding:"20px"}}> Mockup Car Park layout</h1>
-    <img src={layout} alt="no img" style={{width:'50vw',padding:'10px'}}/>
+    <h1 style={{padding:"20px",border:'2px dashed black'}}> Mockup Car Park layout</h1>
+    <img src={layout} alt="no img" style={{width:'50vw',padding:'10px',border:'2px dashed black'}}/>
   
-         <List>
+      {/*   <List>
           <ListItem >
+
            
               <ListItemText primary="User Story 1: " secondary="User wants find free spot" />
   
@@ -50,12 +52,12 @@ const Home=()=>{
           <ListItem >
           
               <ListItemText primary="User Story 2:" secondary="User wants estimated time for free spot" />
-        <Button> Show me free spaces </Button>
+       
           </ListItem>
         </List>
-
+*/}
         
-    <h1 style={{padding:"20px"}}>Work in progress...</h1>
+    <h1 style={{padding:"20px",border:'2px dashed black'}}>Work in progress...</h1>
 
       </Box></Container>
     </React.Fragment>

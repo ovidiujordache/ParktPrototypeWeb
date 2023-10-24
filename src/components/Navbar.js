@@ -13,10 +13,16 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import theme from './Theme'
 import {ThemeProvider } from '@mui/material/styles';
+
+import UserStory1 from '../components/UserStory1'
 import icon from '../images/icon.png'
 
 
-const pages = ['Home', 'About'];
+const pages1 = [{name:'Home',value:'/'}, {name:'About',value:'<About/>'},
+           {name:'User Story 1',value:'<UserStory1/>'},{name:'User Story 2',value:'UserStory2/>'}];
+
+const pages = ["Home","About","User Story 1","User Story 2"];
+
 const settings = ['Profile', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -93,7 +99,8 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center"><Button style={{border:'2px dashed black'}}>{page}</Button>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -117,12 +124,13 @@ function ResponsiveAppBar() {
           >
             PROTOTYPE
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex',border:'2px dashed black' } }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'yellow', display: 'block',border:'3px dashed cyan',padding:'10px' }}
+
               >
                 {page}
               </Button>
