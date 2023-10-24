@@ -24,7 +24,9 @@ const pages1 = [{name:'Home',value:'/'}, {name:'About',value:'<About/>'},
 const pages = ["Home","About","User Story 1","User Story 2"];
 
 const settings = ['Profile', 'Dashboard', 'Logout'];
-
+function renderUserStory1(str){
+  alert(str)
+}
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -97,9 +99,9 @@ function ResponsiveAppBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"><Button style={{border:'2px dashed black'}}>{page}</Button>
+              {pages1.map((data, index) => (
+                <MenuItem key={index} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center"><Button style={{border:'2px dashed black'} } onClick={() => {renderUserStory1("user story 1")}} >{data.name}</Button>
                   </Typography>
                 </MenuItem>
               ))}
@@ -172,4 +174,7 @@ function ResponsiveAppBar() {
     </ThemeProvider>
     );
 }
+
+
+
 export default ResponsiveAppBar;
