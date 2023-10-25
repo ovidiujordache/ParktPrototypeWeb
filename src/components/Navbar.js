@@ -19,7 +19,7 @@ import icon from '../images/icon.png'
 
 
 const pages1 = [{name:'Home',value:''}, {name:'About',value:'about'},
-           {name:'where is free spot',value:'userStory1'},{name:'When spot will be free',value:'userStory2'}];
+           {name:'Where is free space?',value:'userStory1'},{name:'When next space available ?',value:'userStory2'}];
 
 const pages = ["Home","About","User Story 1","User Story 2"];
 
@@ -106,7 +106,7 @@ function ResponsiveAppBar() {
               {pages1.map((data, index) => (
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                  <Link style={{border:'2px dashed black',padding:'10px'} }  to={`/${data.value}`}>{data.name}</Link>
+                  <Link style={{border:'2px dashed black' ,padding:'10px'} }  to={`/${data.value}`}>{data.name}</Link>
                   </Typography>
                 </MenuItem>
               ))}
