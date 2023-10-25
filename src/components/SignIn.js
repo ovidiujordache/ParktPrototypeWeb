@@ -43,9 +43,9 @@ export default function SignIn() {
     });
       var a=  "email:"+ data.get('email')+
       "\npassword:"+ data.get('password')+
-      "\nnavigating home"
+      "\n Navigating to Profile Page"
     alert( a)
-    navigate('/')
+    navigate('/profilePage')
   };
 
   return (
