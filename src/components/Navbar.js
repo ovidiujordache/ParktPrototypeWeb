@@ -23,14 +23,8 @@ const pages1 = [{name:'Home',value:''}, {name:'About',value:'about'},
 
 const pages = ["Home","About","User Story 1","User Story 2"];
 
-const settings = ['Profile', 'Dashboard', 'Logout'];
-function renderUserStory1(str){
+const settings = [{name:'Profile',value:"profilePage"},{name: 'Dashboard',value:"dashboardPage"}, {name:'Logout',value:"signInPage"}];
 
-
-  
-<Link to="/UserStory1">UserStory1</Link>
-
-}
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -167,9 +161,10 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem style={{border:'2px dashed black' ,padding:'10px'} } key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+              {settings.map((data,index) => (
+                <MenuItem style={{border:'2px dashed black' ,padding:'10px'} } key={index} onClick={handleCloseUserMenu}>
+                  <Typography textAlign="center">
+                 <Link  to={`/${data.value}`}>{data.name}</Link></Typography>
                 </MenuItem>
               ))}
             </Menu>
