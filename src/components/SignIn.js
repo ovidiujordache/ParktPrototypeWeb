@@ -14,7 +14,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import theme from './Theme'
 
-
+import { navigate } from "gatsby"
 
 function Copyright(props) {
   return (
@@ -41,6 +41,11 @@ export default function SignIn() {
       email: data.get('email'),
       password: data.get('password'),
     });
+      var a=  "email:"+ data.get('email')+
+      "\npassword:"+ data.get('password')+
+      "\nnavigating home"
+    alert( a)
+    navigate('/')
   };
 
   return (
