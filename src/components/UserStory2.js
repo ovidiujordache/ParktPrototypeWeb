@@ -25,9 +25,15 @@ const UserStory2 =()=>{
       <CssBaseline />
       <Container fixed>
         <Box sx={{ bgcolor: '#F6EFD4' }} >
-        <h2 style={{padding:'30px'}}>
-       User Story 2</h2>
-       <Button style={{border:'5px solid red'}}> When is free ? </Button>
+        <h2 style={{padding:'30px',border:'2px dashed black'}}>
+      According to our smart AI next available space will be in 14 min.</h2>
+           <h3  style={{padding:'30px',border:'2px dashed black'}}>There is 4 people who queried for next available space within last 5 minutes</h3>
+
+      <h3  style={{padding:'30px',border:'2px dashed black'}}>Be mindful this is just an approximation</h3>
+
+      <h3  style={{padding:'30px',border:'2px dashed black'}}>Make a reservation now</h3>
+      <Button style={{padding:'30px',border:'2px dashed black',color:'blue'}}> Reserve now</Button>
+
   
       
 

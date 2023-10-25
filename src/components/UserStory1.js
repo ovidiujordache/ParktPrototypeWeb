@@ -25,7 +25,7 @@ const UserStory1 =()=>{
       <CssBaseline />
       <Container fixed>
         <Box sx={{ bgcolor: '#F6EFD4' }} >
-        <h2 style={{padding:'30px'}}>
+        <h2 style={{padding:'30px',border:'2px dashed black'}}>
     Free parking spaces:</h2>
     <List>
           <ListItem style={{border:'2px dashed black' ,padding:'10px'} } >
