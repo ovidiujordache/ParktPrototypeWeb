@@ -12,3 +12,13 @@
           </ListItem>
         </List>
 */}
+
+#for button 
+onClick={() => {renderUserStory1(data.value)}} >{data.name}
+
+#all code
+          {pages1.map((data, index) => (
+                <MenuItem key={index} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center"><Link style={{border:'2px dashed black'} } </Link>
+                  </Typography>
+                </MenuItem>

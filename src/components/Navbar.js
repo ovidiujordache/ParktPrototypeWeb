@@ -13,19 +13,23 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import theme from './Theme'
 import {ThemeProvider } from '@mui/material/styles';
-
+import { Link } from "gatsby"
 import UserStory1 from '../components/UserStory1'
 import icon from '../images/icon.png'
 
 
-const pages1 = [{name:'Home',value:'/'}, {name:'About',value:'<About/>'},
-           {name:'User Story 1',value:'<UserStory1/>'},{name:'User Story 2',value:'UserStory2/>'}];
+const pages1 = [{name:'Home',value:''}, {name:'About',value:'about'},
+           {name:'where is free spot',value:'userStory1'},{name:'When spot will be free',value:'userStory2'}];
 
 const pages = ["Home","About","User Story 1","User Story 2"];
 
 const settings = ['Profile', 'Dashboard', 'Logout'];
 function renderUserStory1(str){
-  alert(str)
+
+
+  
+<Link to="/UserStory1">UserStory1</Link>
+
 }
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -101,7 +105,8 @@ function ResponsiveAppBar() {
             >
               {pages1.map((data, index) => (
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"><Button style={{border:'2px dashed black'} } onClick={() => {renderUserStory1("user story 1")}} >{data.name}</Button>
+                  <Typography textAlign="center">
+                  <Link style={{border:'2px dashed black',padding:'10px'} }  to={`/${data.value}`}>{data.name}</Link>
                   </Typography>
                 </MenuItem>
               ))}

@@ -26,7 +26,7 @@ const UserStory1 =()=>{
       <Container fixed>
         <Box sx={{ bgcolor: '#F6EFD4' }} >
         <h2 style={{padding:'30px'}}>
-       User Story 1</h2>
+     Find Free spot</h2>
        <Button style={{border:'5px solid red'}}>Get my spot </Button>
   
       

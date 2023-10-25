@@ -8,7 +8,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import theme from './Theme'
+import theme from '../components/Theme'
 import {ThemeProvider } from '@mui/material/styles';
 import layout from '../images/layout_prototype.png';
 import Grid from '@mui/material/Grid';
@@ -16,29 +16,17 @@ import { styled } from '@mui/material/styles';
 import Button from '@material-ui/core/Button';
 
 import Paper from '@mui/material/Paper';
+import Navbar from '../components/Navbar.js'
+import UserStory1 from '../components/UserStory1'
+const UserStory1Page = () => {
+  return (
+   <main>
 
-const UserStory2 =()=>{
- return (
-    <ThemeProvider theme={theme}>
-    <div  >
-    <React.Fragment>
-      <CssBaseline />
-      <Container fixed>
-        <Box sx={{ bgcolor: '#F6EFD4' }} >
-        <h2 style={{padding:'30px'}}>
-       User Story 2</h2>
-       <Button style={{border:'5px solid red'}}> When is free ? </Button>
-  
-      
+<Navbar/>
+<UserStory1/>
 
-
-      </Box></Container>
-    </React.Fragment>
-
-    </div>
-    </ThemeProvider>
-    )
-
-
+    </main>
+  )
 }
-export default UserStory2;
+
+export default UserStory1Page
