@@ -1,5 +1,6 @@
 
 import * as React from "react"
+
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -10,7 +11,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import theme from './Theme'
 import {ThemeProvider } from '@mui/material/styles';
-import layout from '../images/layout_prototype.png';
+import layout_free from '../images/layout_free.png';
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import Button from '@material-ui/core/Button';
