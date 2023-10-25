@@ -36,11 +36,12 @@ const About=()=>{
       <CssBaseline />
       <Container fixed>
         <Box sx={{ bgcolor: '#F6EFD4' }} >
-
+    <img src={logo_ball} alt="no img" style={{width:'100px',padding:'10px',border:'2px dashed black'}} /> <h1 style={{padding:"20px",border:'2px dashed black',float:'left'}}> LOGO</h1>
    
     <h1 style={{padding:"20px",border:'2px dashed black'}}> Project Overview</h1>
 
-     <h5>
+
+     <h5 style={{padding:"20px",border:'2px dashed black'}}>
 
 Parkt System is a software which enables drivers to have more convenience while looking for a car park spot.
 
@@ -48,7 +49,7 @@ The Parkt System is using AI to determine which spots in car park will become fr
 
 In case a user has forgotten where she/he parked Parkt System to the rescue. It shows user exactly where his/her car is parked.
 </h5>
-    <img src={logo_ball} alt="no img" style={{width:'100px',padding:'10px',border:'2px dashed black'}} />
+
 
         
 
