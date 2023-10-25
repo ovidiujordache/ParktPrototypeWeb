@@ -127,19 +127,20 @@ function ResponsiveAppBar() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+              border:'2px dashed cyan'
             }}
           >
             PROTOTYPE
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex',border:'2px dashed black' } }}>
-            {pages.map((page) => (
+            {pages1.map((data,index) => (
               <Button
-                key={page}
+                key={index}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'yellow', display: 'block',border:'3px dashed cyan',padding:'10px' }}
 
               >
-                {page}
+                 <Link style={{border:'2px dashed black' ,padding:'10px',color:'white'} }  to={`/${data.value}`}>{data.name}</Link>
               </Button>
             ))}
           </Box>
