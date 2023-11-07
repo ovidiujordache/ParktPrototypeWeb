@@ -12,7 +12,7 @@ const NotFoundPage = () => {
         {process.env.NODE_ENV === "development" ? (
           <>
             <br />
-            "This is a prototype"
+            "Page not Found"
             <br />
           </>
         ) : null}
