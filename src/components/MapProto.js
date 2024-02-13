@@ -21,16 +21,16 @@ import Paper from '@mui/material/Paper';
 const MapProto =()=>{
 
  return (
-<Script src="../src/carParkMap.js>
-    <ThemeProvider theme={theme}>
-    <div  >
+
+   /* <ThemeProvider theme={theme}>
+    <div>
     <React.Fragment>
       <CssBaseline />
       <Container fixed>
         <Box sx={{ bgcolor: '#F6EFD4' }} >
         <h2 style={{padding:'30px',border:'2px dashed black'}}>
     Free parking spaces:</h2>
-     <div class="dashboard">
+    
         <div class="parking-container" id="parkingspace">
             <div class="counter-slots-holder">
                 <div class="counter-slot" id="timer1"></div>
@@ -59,8 +59,8 @@ const MapProto =()=>{
                 <div class="counter-slot" id="timer6"></div>
                 <div class="counter-slot" id="timer7"></div>
                 <div class="counter-slot" id="timer8"></div>
-                <div class="counter-slot" id="timer9"></div>
-                <div class="counter-slot" id="timer10"></div>
+                <div class="counter-slot" id="timer9"></div>*/
+      /*          <div class="counter-slot" id="timer10"></div>
             </div>
         </div>
         <div class="outside">Entry / Exit</div>
@@ -80,7 +80,8 @@ const MapProto =()=>{
     </React.Fragment>
 
     </div>
-    </ThemeProvider>
+    </ThemeProvider>*/
+    <div></div>
     )
 
 
