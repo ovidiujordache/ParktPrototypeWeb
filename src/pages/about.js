@@ -47,7 +47,7 @@ Parkt System is a software which enables drivers to have more convenience while 
 
 The Parkt System is using AI to determine which spots in car park will become free the earliest. It informs the users about the availability of the spots.
 
-In case a user has forgotten where she/he parked Parkt System to the rescue. It shows user exactly where his/her car is parked.
+In case a user has forgotten where she/he parked Parkt System to the rescue. It shows user exactly where his/her car is parked.How CI/CD works
 </h5>
 
 

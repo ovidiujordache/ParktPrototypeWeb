@@ -19,9 +19,9 @@ import icon from '../images/icon.png'
 
 
 const pages1 = [{name:'Home',value:''}, {name:'About',value:'about'},
-           {name:'Where is free space?',value:'userStory1'},{name:'When next space available ?',value:'userStory2'}];
+           {name:'Where is free space?',value:'userStory1'},{name:'When next space available ?',value:'userStory2',name:"MapProto",value:'MapProtoPage'}];
 
-const pages = ["Home","About","User Story 1","User Story 2"];
+const pages = ["Home","About","User Story 1","User Story 2","MapP"];
 
 const settings = [{name:'Profile',value:"profilePage"},{name: 'Dashboard',value:"dashboardPage"}, {name:'Logout',value:"signInPage"}];
 
